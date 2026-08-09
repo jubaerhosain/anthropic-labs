@@ -11,11 +11,12 @@ fraction of a cent.
 
 ## Labs
 
-| # | Notebook | What it covers |
+| # | Lab | What it covers |
 |---|---|---|
-| 1 | [`1-chatbot.ipynb`](1-chatbot.ipynb) | Messages API basics, streaming, multi-turn history, system prompts, token and cost accounting |
+| 1 | [`1-chatbot/chatbot.ipynb`](1-chatbot/chatbot.ipynb) | Messages API basics, streaming, multi-turn history, system prompts, token and cost accounting |
+| 2 | [`2-tools/tools.py`](2-tools/tools.py) | Tool use: defining your own tools, a hand-written agentic loop, and Anthropic's server-side `web_search` |
 
-Planned, not yet written: tool use, prompt caching, structured outputs, the Batch API.
+Planned, not yet written: prompt caching, structured outputs, the Batch API.
 
 ## Setup
 
@@ -23,6 +24,7 @@ Planned, not yet written: tool use, prompt caching, structured outputs, the Batc
 pip install -r requirements.txt   # anthropic, python-dotenv, ipykernel
 cp .env.example .env              # then paste your key into .env
 jupyter lab                       # or open the notebook in VS Code / Cursor
+python3 2-tools/tools.py          # lab 2 is a script, not a notebook
 ```
 
 Get a key at [platform.claude.com/settings/keys](https://platform.claude.com/settings/keys).
@@ -35,14 +37,18 @@ so construct the client with no arguments rather than passing the key explicitly
 
 ## Cost
 
-Lab 1 runs on **Claude Haiku 4.5** (`claude-haiku-4-5`) — $1 per million input tokens, $5
+The labs run on **Claude Haiku 4.5** (`claude-haiku-4-5`) — $1 per million input tokens, $5
 per million output. A long session costs a fraction of a cent.
+
+Lab 2 is the exception: the server-side `web_search` tool bills **$10 per 1,000 searches**
+on top of tokens, so a single search costs about a cent — more than everything else in the
+lab combined. `max_uses` on the tool definition caps how many searches one turn can make.
 
 The Messages API is stateless: the whole conversation history is resent on every turn, so
 input tokens grow with each turn. That's the main cost driver in a long conversation, and
 the reason prompt caching exists.
 
-Swapping `MODEL` in the notebook buys more capability at higher cost:
+Swapping `MODEL` buys more capability at higher cost:
 
 | Model | Model ID | Context | Input $/MTok | Output $/MTok |
 |---|---|---|---|---|
@@ -51,9 +57,10 @@ Swapping `MODEL` in the notebook buys more capability at higher cost:
 | Claude Opus 5 | `claude-opus-5` | 1M | $5.00 | $25.00 |
 
 Sonnet 5 and Opus 5 also support the `effort` parameter, which Haiku 4.5 does not — sending
-it to Haiku returns a 400. These numbers move; check the
-[pricing page](https://platform.claude.com/docs/en/pricing) for current rates.
+it to Haiku returns a 400. They also accept the newer `web_search_20260209` tool version
+with dynamic filtering; Haiku 4.5 needs the basic `web_search_20250305`. These numbers move;
+check the [pricing page](https://platform.claude.com/docs/en/pricing) for current rates.
 
 ## Requirements
 
-Python 3.10+ (the notebooks use `str | None` union syntax) and an Anthropic API key.
+Python 3.10+ (the labs use `str | None` union syntax) and an Anthropic API key.

@@ -20,3 +20,9 @@ env/
 .DS_Store
 .vscode/
 .idea/
+
+# Files
+*.png
+*.jpg
+*.pdf
+*.csv

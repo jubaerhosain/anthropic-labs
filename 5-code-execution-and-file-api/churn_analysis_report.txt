@@ -1,0 +1,212 @@
+
+================================================================================
+                    CHURN ANALYSIS - EXECUTIVE SUMMARY
+                          STREAMING SERVICE
+================================================================================
+
+OVERVIEW
+--------
+Dataset: 500 customers
+Overall Churn Rate: 38.6% (193 churned, 307 retained)
+Analysis Period: Last Month Activity Data
+
+================================================================================
+                         KEY FINDINGS
+================================================================================
+
+1. MAJOR CHURN DRIVERS (Ranked by Importance)
+----------------------------------------------
+
+   a) TOTAL VIEWING HOURS (Importance: 24.2% - STRONGEST PREDICTOR)
+      ✓ Churned customers: 66.6 hours/month (avg)
+      ✓ Retained customers: 83.2 hours/month (avg)
+      ✓ Difference: -20.0%
+      → LOW ENGAGEMENT is the #1 predictor of churn
+      → Customers watching <30 hours/month have highest churn risk
+
+   b) AVERAGE SESSION DURATION (Importance: 19.8%)
+      ✓ Churned customers: 49.4 minutes (avg)
+      ✓ Retained customers: 57.8 minutes (avg)
+      ✓ Difference: -14.4%
+      → Shorter sessions indicate less engagement and higher churn risk
+
+   c) NUMBER OF UNIQUE TITLES WATCHED (Importance: 16.5%)
+      ✓ Churned customers: 19.5 titles/month (avg)
+      ✓ Retained customers: 23.7 titles/month (avg)
+      ✓ Difference: -18.1%
+      → Less content variety correlates with higher churn
+
+   d) CUSTOMER SERVICE INTERACTIONS (Importance: 11.7%)
+      ✓ Churned customers: 3.2 interactions/year (avg)
+      ✓ Retained customers: 2.5 interactions/year (avg)
+      ✓ Difference: +27.7%
+      → MORE customer service contacts = HIGHER churn risk
+      → Suggests unresolved issues or dissatisfaction
+
+   e) BINGE WATCHING SESSIONS (Importance: 10.8%)
+      ✓ Churned customers: 6.2 sessions/month (avg)
+      ✓ Retained customers: 7.7 sessions/month (avg)
+      ✓ Difference: -19.7%
+      → Binge watching behavior is protective against churn
+
+================================================================================
+                    SEGMENT-SPECIFIC INSIGHTS
+================================================================================
+
+2. CHURN BY SUBSCRIPTION TIER
+------------------------------
+   • Basic Tier: 43.5% churn rate (HIGHEST RISK)
+     - 207 customers, 90 churned
+     - Lower monthly cost ($7.99) but highest churn
+   
+   • Standard Tier: 39.5% churn rate (MODERATE RISK)
+     - 210 customers, 83 churned
+     - Mid-tier pricing ($12.99)
+   
+   • Premium Tier: 24.1% churn rate (LOWEST RISK)
+     - 83 customers, 20 churned
+     - Highest engagement despite higher cost ($17.99)
+     - Almost HALF the churn rate of Basic tier
+
+   → KEY INSIGHT: Premium subscribers are more loyal, suggesting that
+     value perception and feature access reduce churn
+
+3. CHURN BY CONTENT PREFERENCE (Top Genre)
+------------------------------------------
+   HIGHEST CHURN GENRES:
+   • Horror: 52.3% churn rate (23 of 44 customers)
+   • Thriller: 48.3% churn rate (14 of 29 customers)
+   • Action: 44.6% churn rate (33 of 74 customers)
+   • Romance: 41.8% churn rate (23 of 55 customers)
+
+   LOWEST CHURN GENRES:
+   • Documentary: 25.9% churn rate (14 of 54 customers)
+   • Comedy: 33.0% churn rate (33 of 100 customers)
+   • Drama: 35.3% churn rate (36 of 102 customers)
+
+   → KEY INSIGHT: Documentary and comedy fans are more loyal
+   → Horror/Thriller fans may have more niche preferences and
+     higher likelihood to churn if content library is insufficient
+
+4. VIEWING HOURS ANALYSIS
+--------------------------
+   Churn Rate by Viewing Hours Range:
+   • 0-30 hours: HIGHEST CHURN RISK
+   • 30-60 hours: HIGH CHURN RISK
+   • 60-90 hours: MODERATE RISK
+   • 90+ hours: LOWEST CHURN RISK
+
+   → Critical threshold appears to be around 60-70 hours/month
+   → Customers below this threshold should be prioritized for retention
+
+================================================================================
+                    STATISTICAL CORRELATIONS
+================================================================================
+
+Features with NEGATIVE correlation to churn (protective factors):
+   • Total Viewing Hours: -0.246 (more viewing = less churn)
+   • Binge Watching Sessions: -0.237 (more binging = less churn)
+   • Unique Titles Watched: -0.224 (more variety = less churn)
+   • Session Duration: -0.218 (longer sessions = less churn)
+   • Monthly Cost: -0.126 (higher tier = less churn)
+
+Features with POSITIVE correlation to churn (risk factors):
+   • Customer Service Interactions: +0.279 (more contacts = more churn)
+     → This is the ONLY positive predictor
+     → Strong indicator of underlying problems
+
+================================================================================
+                    PREDICTIVE MODEL PERFORMANCE
+================================================================================
+
+Random Forest Classifier Results:
+   • ROC-AUC Score: 0.647
+   • Overall Accuracy: 62%
+   • Precision (Churn): 51%
+   • Recall (Churn): 31%
+
+   → Model shows moderate predictive power
+   → Churn is partially predictable from engagement metrics
+   → Additional factors (not in dataset) likely influence churn
+
+================================================================================
+                    STRATEGIC RECOMMENDATIONS
+================================================================================
+
+IMMEDIATE ACTIONS:
+
+1. ENGAGEMENT INTERVENTIONS (Target: Low viewing hours customers)
+   • Identify customers with <50 hours/month viewing
+   • Send personalized content recommendations
+   • Implement "nudge" campaigns to increase engagement
+
+2. CUSTOMER SERVICE QUALITY IMPROVEMENT
+   • Customers with 3+ service interactions are HIGH RISK
+   • Implement proactive follow-up after service contacts
+   • Investigate root causes of service issues
+   • Set up early warning system for repeat contacts
+
+3. BASIC TIER RETENTION PROGRAM
+   • Basic tier has 43.5% churn vs 24.1% for Premium
+   • Consider:
+     - Highlight upgrade benefits to Basic subscribers
+     - Offer limited-time Premium features to Basic users
+     - Improve Basic tier value proposition
+
+4. CONTENT STRATEGY
+   • Expand Documentary and Comedy content (low churn genres)
+   • Improve Horror/Thriller catalog quality or variety
+   • Promote binge-worthy series to increase session counts
+
+5. PREDICTIVE CHURN SCORING
+   • Deploy churn risk score for all customers
+   • High-risk criteria:
+     * <50 viewing hours/month
+     * <6 binge sessions/month
+     * 3+ customer service interactions
+     * Basic tier subscription
+     * Horror/Thriller primary genre
+
+6. RETENTION CAMPAIGNS
+   • Target customers showing early warning signs:
+     - Declining viewing hours month-over-month
+     - Decreasing session duration
+     - Recent customer service contact
+   • Offer targeted incentives before they decide to leave
+
+================================================================================
+                         CONCLUSION
+================================================================================
+
+The analysis reveals that ENGAGEMENT is the primary driver of retention.
+Customers who watch more content, for longer sessions, with more variety,
+and engage in binge-watching are significantly less likely to churn.
+
+The most actionable insight is the strong correlation between customer
+service interactions and churn (+27.7% higher for churned customers),
+suggesting that many churning customers had unresolved issues.
+
+Focusing retention efforts on:
+   1. Low-engagement users (especially <50 hours/month)
+   2. Basic tier subscribers (43.5% churn rate)
+   3. Customers with recent customer service contacts
+
+...should yield the highest impact on reducing overall churn rate.
+
+================================================================================
+                    VISUALIZATIONS GENERATED
+================================================================================
+
+1. churn_analysis_comprehensive.png
+   - 10-panel comprehensive overview
+   - Feature importance rankings
+   - Distribution analyses by churn status
+   - Genre and tier breakdowns
+
+2. churn_analysis_detailed.png
+   - Statistical correlation matrix
+   - Box plot comparisons
+   - Churn rate by viewing hours range
+   - Summary statistics table
+
+================================================================================

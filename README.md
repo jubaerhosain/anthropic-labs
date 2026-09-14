@@ -15,6 +15,7 @@ fraction of a cent.
 |---|---|---|
 | 1 | [`1-chatbot/chatbot.ipynb`](1-chatbot/chatbot.ipynb) | Messages API basics, streaming, multi-turn history, system prompts, token and cost accounting |
 | 2 | [`2-tools/tools.py`](2-tools/tools.py) | Tool use: defining your own tools, a hand-written agentic loop, and Anthropic's server-side `web_search` |
+| — | [`ccar-f/agentic-loops/`](ccar-f/agentic-loops/) | The agentic loop on its own terms: `stop_reason` as the control flow, two client-side tools, sequential multi-tool runs, and why an iteration cap is a backstop and not a stopping mechanism |
 
 Planned, not yet written: prompt caching, structured outputs, the Batch API.
 
@@ -25,6 +26,7 @@ pip install -r requirements.txt   # anthropic, python-dotenv, ipykernel
 cp .env.example .env              # then paste your key into .env
 jupyter lab                       # or open the notebook in VS Code / Cursor
 python3 2-tools/tools.py          # lab 2 is a script, not a notebook
+python3 ccar-f/agentic-loops/agent_loop.py   # so is the agentic-loops lab
 ```
 
 Get a key at [platform.claude.com/settings/keys](https://platform.claude.com/settings/keys).

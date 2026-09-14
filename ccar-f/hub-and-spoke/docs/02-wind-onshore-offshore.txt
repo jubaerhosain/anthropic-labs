@@ -1,0 +1,25 @@
+INTERNAL TECHNOLOGY BRIEF - WIND GENERATION
+Revision 6
+
+Onshore.
+Onshore wind LCOE averaged USD 0.034/kWh globally in 2024, making it the cheapest new-build
+generation in most markets. Turbine nameplate ratings for new onshore orders cluster at
+5-7 MW with rotor diameters above 160 m. Capacity factors of 35-45% are routine at good
+sites; repowering older sub-2 MW fleets typically doubles output from the same footprint.
+
+Offshore, fixed-bottom.
+Fixed-bottom offshore reached USD 0.075/kWh in 2024. The 2023-2024 period saw material
+cost stress: several US and UK projects were cancelled or renegotiated after monopile,
+vessel and interest-rate inflation outran contracted strike prices. Turbine ratings of
+14-16 MW are now standard for new orders, with 18-20 MW prototypes under test.
+
+Offshore, floating.
+Floating platforms unlock water depths beyond 60 m, which is most of the resource off Japan,
+California and the Atlantic coast of Iberia. Cumulative deployment remains near 0.3 GW -
+pilot scale. Semi-submersible designs dominate; mooring and dynamic-cable reliability are the
+open engineering questions. Cost is currently 2-3x fixed-bottom and expected to converge
+slowly through the 2030s.
+
+Integration note.
+Wind output is anticorrelated with solar on daily and seasonal timescales in most temperate
+grids, which is why hybrid procurement lowers firming cost. See the grid integration file.

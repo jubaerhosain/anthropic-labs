@@ -1,0 +1,24 @@
+INTERNAL TECHNOLOGY BRIEF - UTILITY-SCALE SOLAR PHOTOVOLTAICS
+Revision 4, Q2 planning cycle
+
+Cost position.
+Utility-scale PV reached a global weighted-average LCOE of USD 0.043/kWh in 2024, down
+roughly 90% from 2010. Module prices fell below USD 0.09/W in late 2024 on the back of
+Chinese polysilicon oversupply. Balance-of-system and soft costs now dominate project
+budgets in mature markets - in the US they are approximately 65% of installed cost.
+
+Technology mix.
+Monocrystalline PERC still ships in volume, but TOPCon overtook it in new capacity during
+2024 and now holds the majority of tier-1 production lines. Heterojunction (HJT) holds a
+smaller premium niche. Perovskite-silicon tandems have passed 33.9% cell efficiency in the
+laboratory; commercial durability under damp-heat cycling remains the blocker, with no
+bankable 25-year warranty yet offered.
+
+Capacity factors and siting.
+Typical fixed-tilt capacity factor is 16-20%; single-axis tracking raises this to 22-28% in
+high-irradiance regions. Agrivoltaics and floating PV are the two siting innovations with
+material land-constraint relief; floating PV installations exceeded 7 GW cumulative in 2024.
+
+Known limitations of this brief.
+Concentrated solar power (CSP) with thermal storage is not assessed here - see the separate
+thermal generation file. Distributed rooftop economics are out of scope.

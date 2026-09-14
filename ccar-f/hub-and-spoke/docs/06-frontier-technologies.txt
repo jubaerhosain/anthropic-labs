@@ -1,0 +1,18 @@
+INTERNAL MEMO - FRONTIER AND PRE-COMMERCIAL TECHNOLOGIES
+
+Scope note: this memo lists frontier technologies for tracking purposes only. None are
+assessed in depth. Each line is a pointer, not a finding.
+
+- Fusion. Excluded from the renewables assessment on definitional grounds (not renewable in
+  the conventional taxonomy; fuel is mined lithium and deuterium). Tracking only. Private
+  sector funding has been substantial. NO TECHNICAL ASSESSMENT ON FILE - external sourcing
+  required if fusion is to be covered.
+- Green hydrogen and derived e-fuels. Electrolyser cost curves tracked separately.
+- Space-based solar power. Watching brief; no near-term relevance.
+- Osmotic / salinity-gradient power. Watching brief.
+- Advanced nuclear (SMRs). Out of scope - not renewable, tracked by the nuclear team.
+
+Reviewer comment appended to revision 2: "The exclusion of fusion on definitional grounds is
+defensible for a renewables-only portfolio review but will look like an oversight in any
+document framed as covering energy technologies broadly. Flag it explicitly rather than
+letting the absence speak."

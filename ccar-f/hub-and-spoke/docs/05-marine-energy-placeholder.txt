@@ -1,0 +1,11 @@
+INTERNAL MEMO - MARINE AND OCEAN ENERGY
+
+Status: PLACEHOLDER. No technology assessment has been commissioned for this category.
+
+Marine energy (tidal stream, tidal range/barrage, wave, ocean thermal, salinity gradient)
+was scoped out of the current review cycle on the grounds of immaterial installed capacity
+in our operating regions. Global installed marine capacity is understood to be under 1 GW.
+
+An assessment should be commissioned before the next planning cycle. Until then this file
+should not be cited as evidence that marine energy is unimportant - only that we have not
+looked at it. External sources will be required.

@@ -1,0 +1,27 @@
+INTERNAL TECHNOLOGY BRIEF - GEOTHERMAL
+Revision 3
+
+Conventional hydrothermal.
+Global installed geothermal capacity is approximately 16 GW, concentrated in the US,
+Indonesia, the Philippines, Turkey and Kenya. Capacity factors are 70-90% - the highest of
+any renewable source - which makes geothermal a genuine baseload and firming resource rather
+than an energy-only one. Growth has been slow, roughly 3% annually, because conventional
+plants require a rare combination of heat, permeability and fluid.
+
+Enhanced geothermal systems (EGS).
+EGS engineers permeability into hot dry rock, removing the resource-rarity constraint and in
+principle making geothermal siteable almost anywhere. Fervo Energy's Cape Station project in
+Utah demonstrated 3.5 MW per well flow rates in 2024 and has contracted offtake; drilling
+costs have fallen sharply by importing horizontal drilling and fibre-optic sensing practice
+directly from shale. Induced seismicity remains the principal siting and permitting risk -
+the 2017 Pohang event in South Korea is the reference case.
+
+Superhot rock and closed-loop.
+Superhot rock (>375 C, supercritical fluid) offers order-of-magnitude energy density gains
+but has no field demonstration at power scale. Closed-loop designs (Eavor) avoid the
+seismicity and fluid-loss problems at the cost of lower heat-transfer rates.
+
+Direct use.
+Roughly 175 GWth of direct-use geothermal for district heating, greenhouses and aquaculture
+is installed globally - larger than the power sector and routinely omitted from renewable
+electricity statistics.

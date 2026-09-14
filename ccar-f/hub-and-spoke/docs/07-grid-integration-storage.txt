@@ -1,0 +1,30 @@
+INTERNAL TECHNOLOGY BRIEF - GRID INTEGRATION, STORAGE AND FIRMING
+Revision 7
+
+The integration problem.
+Variable renewable penetration above roughly 30-40% of annual energy shifts the binding
+constraint from generation cost to system flexibility. Curtailment, negative price hours and
+the steep evening net-load ramp ("duck curve") are the observable symptoms. California
+curtailed approximately 3.4 TWh of solar in 2024.
+
+Battery storage.
+Lithium iron phosphate (LFP) now dominates grid storage on cost and cycle life. Pack prices
+fell below USD 100/kWh in 2024. Four-hour duration is the commercial standard; this covers
+the daily solar shift but not multi-day wind lulls.
+
+Long-duration storage.
+The 10-100 hour regime is unsolved commercially. Candidates: pumped hydro (mature, 95% of
+installed storage energy globally, but siting-constrained), compressed air, iron-air
+(Form Energy's 100-hour chemistry, first installations 2024-2025), and thermal storage.
+
+Firm low-carbon resources.
+Geothermal, hydropower with reservoir, BECCS and hydrogen turbines can provide firming
+without storage. Systems studies consistently find that the last 10-20% of decarbonisation
+is far cheaper with a firm resource in the mix than with storage alone - which is the main
+argument for keeping geothermal, biomass and dispatchable marine options in the portfolio
+rather than optimising purely for lowest-LCOE variable generation.
+
+Hydropower.
+Approximately 1,400 GW installed globally, the largest renewable source of electricity.
+Growth is limited by remaining sites, ecological objection and, increasingly, drought risk to
+existing reservoir output.

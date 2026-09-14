@@ -1,0 +1,31 @@
+INTERNAL TECHNOLOGY BRIEF - BIOMASS AND BIOENERGY
+Revision 5
+
+Scale and forms.
+Bioenergy supplies roughly 55% of global renewable final energy consumption when traditional
+biomass for cooking and heating is counted - far more than wind and solar combined, and
+routinely underweighted in reporting that looks only at electricity. Modern bioenergy splits
+into solid biomass power, biogas and biomethane, liquid biofuels, and traditional use.
+
+Carbon accounting.
+The dominant controversy. Combustion emits CO2 at the stack at rates comparable to or above
+coal per unit energy; the claimed neutrality depends entirely on regrowth over a payback
+period that ranges from under 5 years for agricultural residues to 40-100 years for whole
+mature trees. The EU's treatment of imported wood pellets as zero-carbon at the point of
+combustion is the most-litigated instance of this accounting choice.
+
+BECCS.
+Bioenergy with carbon capture and storage is the negative-emissions pathway most heavily
+relied upon in IPCC mitigation scenarios. Stockholm Exergi's Varta project reached FID in
+2024 for roughly 800,000 tonnes CO2 per year. Sustainable feedstock supply, not capture
+technology, is the binding constraint on scale.
+
+Biogas and biomethane.
+Anaerobic digestion of manure, food waste and sewage produces biogas upgradeable to grid-
+injectable biomethane. Europe produced approximately 4.9 bcm of biomethane in 2024. The
+methane-avoidance credit from diverting manure often exceeds the fuel's own combustion
+emissions, which makes it one of the few unambiguously net-negative bioenergy routes.
+
+Aviation fuel.
+HEFA from waste oils is the only SAF pathway at commercial scale today and is feedstock-
+limited. Alcohol-to-jet and gasification routes are pre-commercial.
